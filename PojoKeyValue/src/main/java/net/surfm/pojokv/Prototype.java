@@ -9,7 +9,7 @@ import java.util.List;
  * @author Kirin
  *
  */
-public class Prototype implements KeyValuePojo<Prototype> {
+public abstract class Prototype implements KeyValuePojo<Prototype> {
 	
 	private Integer id;
 	private String name = "Kan";
