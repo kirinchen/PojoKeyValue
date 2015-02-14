@@ -1,11 +1,15 @@
 package net.surfm.pojokv.build;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.lang3.text.StrSubstitutor;
 
 public class PojoBuilder {
+	
+	private File file;
+	
 
 	public static void main(String[] args) {
 		Map<String, String> valuesMap = new HashMap<String, String>();
