@@ -1,0 +1,7 @@
+	public ${type} get${Capital}() {
+		return ${name};
+	}
+
+	public void set${Capital}(${type} ${name}) {
+		this.${name} = ${name};
+	}

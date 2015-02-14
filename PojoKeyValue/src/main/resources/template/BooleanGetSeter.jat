@@ -1,0 +1,7 @@
+	public boolean is${Capital}() {
+		return ${name};
+	}
+
+	public void set${Capital}(boolean ${name}) {
+		this.${name} = ${name};
+	}

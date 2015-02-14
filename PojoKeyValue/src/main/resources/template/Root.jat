@@ -1,0 +1,43 @@
+package ${packageName};
+
+${imports}
+
+/**
+ * 
+ * @author Kirin
+ *
+ */
+public class ${className} implements KeyValuePojo<${className}> {
+	
+	${attributes}
+
+	${geterSeters}
+
+	@Override
+	public Collection<AttributeKey<${className}, ?>> listKeys() {
+		List<AttributeKey<${className}, ?>> ans = new ArrayList<AttributeKey<${className},?>>();
+		${keyAdds}
+		return ans;
+	}
+	
+	@Override
+	public <T> T get(AttributeKey<${className}, T> key) {
+		${firstGetByKey}
+		${getByKeys}
+		else{
+			throw new NotFindKeyException("key="+key);
+		}
+	}
+	
+	@Override
+	public <T> void put(AttributeKey<${className}, T> key, T o) {
+		${firstPutByKey}
+		${putByKeys}
+		else{
+			throw new NotFindKeyException("key="+key);
+		}
+	}
+	
+	${attributeKeys}
+
+}
