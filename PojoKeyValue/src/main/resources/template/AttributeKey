@@ -1,0 +1,1 @@
+	public static AttributeKey<${className},${type}> ${upperName} = new AttributeKey<${className}, ${type}>() {};
