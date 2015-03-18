@@ -1,3 +1,0 @@
-		else if(key == ${attributeKey}){
-			return (T) ${typeConvert} ${name};
-		}

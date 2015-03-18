@@ -15,29 +15,7 @@ public class Prototype implements KeyValuePojo<Prototype> {
 	private String name = "Kan";
 	private boolean actived;
 
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public boolean isActived() {
-		return actived;
-	}
-
-	public void setActived(boolean actived) {
-		this.actived = actived;
-	}
+	
 
 	@Override
 	public Collection<AttributeKey<Prototype, ?>> listKeys() {
@@ -74,8 +52,17 @@ public class Prototype implements KeyValuePojo<Prototype> {
 		}
 	}
 	
-	public static AttributeKey<Prototype,Integer> ID = new AttributeKey<Prototype, Integer>() {};
-	public static AttributeKey<Prototype,String> NAME = new AttributeKey<Prototype, String>() {};
-	public static AttributeKey<Prototype,Boolean> ACTIVED = new AttributeKey<Prototype, Boolean>() {};
+	public static AttributeKey<Prototype,Integer> ID;
+	public static AttributeKey<Prototype,String> NAME;
+	public static AttributeKey<Prototype,Boolean> ACTIVED;
 
+
+
+
+
+
+
+
+
+	
 }

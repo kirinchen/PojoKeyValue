@@ -1,3 +1,0 @@
-		if(key == ${attributeKey}){
-			id = (${type}) o;
-		}
